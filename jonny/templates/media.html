@@ -1,0 +1,79 @@
+{% extends "layouts/layout.html" %}
+  {% block title %}Media | {% endblock %}
+
+
+{% block content %}
+  <div class="background-media">
+  </div>
+
+  <div class="media-container" id="squash-container">
+    <div class="media-box">
+      <div class="gallery-container">
+        <div class="gallery">
+          <h1 class="media-title">Gallery</h1>
+          <div class="gallery-row">
+
+            <div class="gallery-column">
+              <img id="jonny-img" src="static/img/Jonny Hamburg-95.jpg">
+              <img src="static/img/Jonny Hamburg-75.jpg">
+              <img src="static/img/Jonny Hamburg-92.jpg">
+              <img src="static/img/Jonny Hamburg-55.jpg">
+
+              <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+              </div>
+
+            </div>
+
+            <div class="gallery-column">
+              <img src="static/img/Jonny Hamburg-75.jpg">
+              <img src="static/img/Jonny Hamburg-92.jpg">
+              <img src="static/img/Jonny Hamburg-55.jpg">
+              <img id="jonny-img" src="static/img/Jonny Hamburg-95.jpg">
+            </div>
+
+            <div class="gallery-column">
+              <img src="static/img/Jonny Hamburg-92.jpg">
+              <img src="static/img/Jonny Hamburg-55.jpg">
+              <img id="jonny-img" src="static/img/Jonny Hamburg-95.jpg">
+              <img src="static/img/Jonny Hamburg-75.jpg">
+            </div>
+
+            <div class="gallery-column">
+              <img src="static/img/Jonny Hamburg-75.jpg">
+              <img src="static/img/Jonny Hamburg-92.jpg">
+              <img src="static/img/Jonny Hamburg-55.jpg">
+              <img id="jonny-img" src="static/img/Jonny Hamburg-95.jpg">
+            </div>
+          </div>
+          </div>
+
+          <div class="videos">
+          <h1 class="media-title">Videos</h1>
+
+          <div class="video-row">
+
+            <div class="video-column-left">
+              <iframe class="media-videos" src="https://www.youtube.com/embed/_lK4cX5xGiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="media-videos" src="https://www.youtube.com/embed/zfqdCXz8Yww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+
+            <div class="video-column-right">
+              <iframe class="media-videos" src="https://www.youtube.com/embed/tKlVYJTSzuU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="media-videos" src="https://www.youtube.com/embed/VqoyKzgkqR4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          </div>
+          </div>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+{% endblock %}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    {% block head %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link href="/static/css/jonny.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'>
+    </script>
+
+    <style>
+      @font-face { font-family: Theme; src: url('static/fonts/Theme.ttf'); }
+      @font-face { font-family: OhNow; src: url('static/fonts/OhNow.ttf'); }
+      @font-face { font-family: Rustico; src: url('static/fonts/Rustico.ttf');}
+      @font-face { font-family: NothingYouCouldSay; src: url('static/fonts/NothingYouCouldSay.ttf'); }
+      @font-face { font-family: Warung; src: url('static/fonts/Warung.otf'); }
+    </style>
+    <title>{% block title %}{% endblock %}Jonny Vom Dahl</title>
+    {% endblock %}
+  </head>
+  <body>
+    <header>
+      <div class="sidenav" id="mySidebar">
+        {% block sidenav %}
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a class="home" href="/">Home</a>
+          <a href="bio">Bio</a>
+          <a href="live">Live</a>
+          <a href="music">Music</a>
+          <a href="media">Media</a>
+          <a href="contact">Contact</a>
+        {% endblock %}
+      </div>
+      <div id="pushbutton">
+        <button class="openbtn" onclick="openNav()", "openPhoneNav">&#9776;</button>
+      </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+    {% block footer %}
+      <div class="footer">
+        <p class="footer-text"> © 2020 Jonny Vom Dahl.  All rights reserved. <p>
+      </div>
+    {% endblock %}
+    {% block jscript %}
+    <script type="text/javascript" src="static/js/jonny.js"></script>
+    {% endblock %}
+  </body>
+</html>
